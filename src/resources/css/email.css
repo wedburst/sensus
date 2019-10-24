@@ -1,0 +1,45 @@
+.errores{
+			-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+			-moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+			-o-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+			background: red;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+			color: #fff;
+			display: none;
+			font-size: 14px;
+			width: 100%;
+			text-align: center;
+			border-radius: 5px;
+			/*margin-top: -40px;*/
+			/*margin-left: 790px;*/
+			/*padding: 10px;*/
+			/*position: absolute;*/
+		}
+form.miFormulario label.error, label.error {
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+			-moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+			-o-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+			background: red;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+			color: #fff;
+			display: none;
+			font-size: 14px;
+			width: 100%;
+			text-align: center;
+			border-radius: 5px;
+}
+.btn{cursor: pointer;}
+
+.formula{
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.size{
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+}
+@media screen and (max-width: 766px) {
+  .size{
+  	width: 90%;
+  }
+}

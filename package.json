@@ -1,0 +1,57 @@
+{
+    "title": "Full Width Pics",
+    "name": "startbootstrap-full-width-pics",
+    "version": "4.2.0",
+    "scripts": {
+        "start": "gulp watch"
+    },
+    "description": "A HTML template featuring sections with full width image backgrounds built with Bootstrap",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "https://startbootstrap.com/template-overviews/full-width-pics",
+    "bugs": {
+        "url": "https://github.com/BlackrockDigital/startbootstrap-full-width-pics/issues",
+        "email": "feedback@startbootstrap.com"
+    },
+    "license": "MIT",
+    "author": "Start Bootstrap",
+    "contributors": [
+        "David Miller (http://davidmiller.io/)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BlackrockDigital/startbootstrap-full-width-pics.git"
+    },
+    "dependencies": {
+        "bootstrap": "4.3.1",
+        "jquery": "3.4.1",
+        "slider-fotorama": "4.7.0",
+        "popper.js": "1.15.0",
+        "owl.carousel": "2.3.4",
+        "font-awesome": "4.7.0"
+    },
+    "devDependencies": {
+        "@types/jquery": "^3.3.29",
+        "@types/owl.carousel": "^2.3.1",
+        "@types/owlcarousel": "1.3.4",
+        "autoprefixer": "^9.5.1",
+        "browser-sync": "2.26.5",
+        "cssnano": "^4.1.10",
+        "del": "^4.1.1",
+        "gulp": "4.0.2",
+        "gulp-concat": "2.6.1",
+        "gulp-postcss": "^8.0.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-sourcemaps": "^2.6.5",
+        "gulp-typescript": "5.0.1",
+        "gulp-uglify": "3.0.2",
+        "merge-stream": "^1.0.1",
+        "typescript": "3.5.1"
+    }
+}

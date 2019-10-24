@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sensus</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css"> -->
+	<link rel="stylesheet" href="resources/css/bootstrap.css">
+	<link rel="stylesheet" href="resources/css/style.css">
+	<!-- Awesome -->
+    <link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/font-awesome.min.css">
+	<!-- contact -->
+	<link type="text/css" rel="stylesheet" href="resources/css/email.css">
+	<link type="text/css" rel="stylesheet" href="resources/css/mensaje.css">
+	<link rel="stylesheet" href="resources/css/animate.css">
+	<!-- Jquery del landing page -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- contact -->
+	<script type="text/javascript" src="resources/js/procesar.js"></script>
+	<script type="text/javascript" src="resources/js/jquery.aniview.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function() {
+            var options = {
+                animateThreshold: 100
+            };
+            $('.aniview').AniView(options);
+
+            $('.code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+        });
+    </script>
+
+</head>
+<body>
+	<header>
+
+	</header>
+	<div class="container-fluid">
+		<div class="d-none d-md-block" id="#section">
+			
+			<div class="sidenav">
+				<div class="container">
+					<div class="d-flex justify-content-center">
+						<img src="resources/img/sensus.png" alt="sensus">
+					</div>
+				</div>
+			  <a href="#section" onclick="openSection('color1')">GRAPH</a>
+			  <a href="#section" onclick="openSection('color2')">MERCH</a>
+			  <a href="#section" onclick="openSection('color3')">BTL</a>
+			  <a href="#section" onclick="openSection('color4')">IMAGE</a>
+			  <a href="#section" onclick="openSection('color5')">E-MARKETING</a>
+			  <hr>
+			  <a class="active" href="#section1">Nosotros</a>
+			  <!-- <a href="#">Portafolio</a> -->
+			  <a href="#section3">Contactos</a>
+			</div>
+		</div>
+	</div>
+	<div class="pos-f-t d-md-none sticky-top">
+	  <div class="collapse " id="navbarToggleExternalContent">
+	    <div class="bg-sidenav p-4">
+	      <h4 class="text-dark oswald">Menu</h4>
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item">
+					<a class="nav-link text-muted oswald" href="#section1">Nosotros</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-muted oswald" href="#section2">Contactos</a>
+				</li>
+		    </ul>
+	      <!-- <span class="text-muted">Toggleable via the navbar brand.</span> -->
+	    </div>
+	  </div>
+	  <nav class="navbar navbar-light bg-sidenav">
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	  </nav>
+	</div>
+	<!--  -->
+	<div class="main">
+	 <div class="video-contenedor">
+		<video autoplay controls muted  class="video">
+			<!-- <source src="parrots-small.mp4" type="video/mp4" media="all and (max-width:480px)"> -->
+			<!-- <source src="parrots-small.webm" type="video/webm" media="all and (max-width:480px)"> -->
+			<source src="resources/video/sensus.mp4" type="video/mp4">
+			<!-- <source src="parrots.webm" type="video/webm"> -->
+		</video>
+	 </div>
+	<!-- <div class="row " >
+		<div class="head d-none d-md-block aniview" data-av-animation="bounceIn">
+			<div class="main d-flex justify-content-center">
+		 		<div class="bg-head text-center text-white">
+			 		<h1 class="nunito">Nosotros somos la empresa de confianza</h1>
+			 		<h1 class="nunito">que tanto estabas esperando</h1>
+			 	</div>
+		 	</div>
+		</div>
+	</div> -->
+	<div class="">
+			<div class="person"  id="section">
+				<div class="section color1 ">
+					<span class="x" onclick="closeSection('color1')"><img src="resources/img/icon/close.svg" alt="close"></span>
+					<div class="col-sm-12 acomodar text-center">
+						<img class="icon"  onclick="openSection('color1')"  src="resources/img/icon/1.png" alt="">
+						<h1 class="texto1">GRAPH</h1>
+					</div>
+					<!-- <img src="html/imagenes/prueba.jpg" style="max-width:100%;width:auto;height:auto;"> -->
+					<!-- <button>Abrir</button> -->
+				</div>
+				<div class="section color2">
+					<span class="x" onclick="closeSection('color2')"><img src="resources/img/icon/close.svg" alt="close"></span>
+					<div class="col-sm-12 acomodar text-center">
+						<img class="icon"  onclick="openSection('color2')"  src="resources/img/icon/2.png" alt="">
+						<h1 class="texto2">MERCH</h1>
+					</div>
+					<!-- <button onclick="openSection('color2')">Abrir</button> -->
+				</div>
+				<div class="section color3">
+					<span class="x" onclick="closeSection('color3')"><img src="resources/img/icon/close.svg" alt="close"></span>
+					<div class="col-sm-12 acomodar text-center">
+						<img class="icon"  onclick="openSection('color3')"  src="resources/img/icon/3.png" alt="">
+						<h1 class="texto3">BTL</h1>
+					</div>
+					<!-- <button onclick="openSection('color3')">Abrir</button> -->
+				</div>
+				<div class="section color4">
+					<span class="x" onclick="closeSection('color4')"><img src="resources/img/icon/close.svg" alt="close"></span>
+					<div class="col-sm-12 acomodar text-center">
+						<img class="icon"  onclick="openSection('color4')"  src="resources/img/icon/4.png" alt="">
+						<h1 class="texto4">IMG</h1>
+					</div>
+					<!-- <button onclick="openSection('color4')">Abrir</button> -->
+				</div>
+				<div class="section color5">
+					<span class="x" onclick="closeSection('color5')"><img src="resources/img/icon/close.svg" alt="close"></span>
+					<div class="col-sm-12 acomodar text-center">
+						<img class="icon"  onclick="openSection('color5')"  src="resources/img/icon/5.png" alt="">
+						<h1 class="texto5">E-MARKETING</h1>
+					</div>
+					<!-- <button onclick="openSection('color5')">Abrir</button> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Section 1 Sensus-->
+	<div class="main" id="section1">
+		<div class="text-center">
+			<h1 class="display-3 text-center p-3 colorSunset aniview" data-av-animation="fadeInUp">SENSUS</h1>
+			<p class="me aniview" data-av-animation="fadeInUp"><b>Nosotros somos la empresa de confianza que tanto estabas esperando</b></p>
+			<p class="container text-muted aniview" data-av-animation="fadeInUp" style="font-size: 24px;">Amigos de infancia que siempre soñamos con construir una campañia en donde podamos explotar nuestras habilidades y capacidades, Sensus
+			es justo lo que soñamos y por ello le aseguramos todo el compromiso y profesionalismo con cada proyecto que nos puedan confiar.</p>
+		</div>
+		<div class="contenedor-guazaa">
+			<a href="https://api.whatsapp.com/send?phone=51986624949&fbclid=IwAR0ELfK8ffheekzJbDsqVpIoTl-niPUMIb6BDVNsVF-tEd7y0tP8N3K5Is8"><img class="guazaa" src="resources/img/icon/whatsapp.svg" alt="whatsapp"></a>
+		</div>
+		<div class="container">
+			<div class="row mt-5">
+				<div class="col-sm-12 col-md-12 col-xl-6">
+					<img class="hola img-fluid aniview" data-av-animation="fadeInLeft" src="resources/img/hola.png" alt="senset">
+				</div>	
+				<div class="col-sm-12 col-md-12 col-xl-6">
+					<div class="aniview" data-av-animation="fadeInRight">
+						<h1 class="colorSunset">Nosotros</h1>
+						<p>Amigos de infancia que siempre soñamos con constuir una compañia en donde podamos explotar nuestras habilidades y capacidades, Sensus es usto a lo que soñamos y por ello le aseguramos todo el compromiso y profesionalismo con cada proyecto que nos puedan confiar.</p>
+					</div>
+					<div class="aniview" data-av-animation="fadeInRight">
+						<h1 class="colorSunset">Misión</h1>
+						<p>Sensus existe con el propósito de ser un aliado/socio estratégico de nuestros clientes, generando un valor tangible e incopiable, y siendo parte fundamental para el logro de sus objetivos corporativos, comerciales de marketing.</p>
+					</div>
+					<div class="aniview" data-av-animation="fadeInRight">
+						<h1 class="colorSunset">Visión</h1>
+						<p>Ser reconocidos como una de las mejores 05 empresas en soluciones de MKT a nivel nacional, en un plazo no mayor a 07 años.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main" id="section2">
+		<h1 class="bg-primary text-center p-3 text-white">Por qué elegir Sensus?</h1>
+		<div class="text-center aniview" data-av-animation="fadeInUp">
+			<p class="me"><b>Nosotros somos la empresa de confianza que tanto estabas esperando</b></p>
+			<p class="container text-muted" style="font-size: 24px;">Amigos de infancia que siempre soñamos con construir una campañia en donde podamos explotar nuestras habilidades y capacidades, Sensus
+			es justo lo que soñamos y por ello le aseguramos todo el compromiso y profesionalismo con cada proyecto que nos puedan confiar.</p>
+		</div>
+		<div class="caja3">
+			<div class="row d-flex align-items-center justify-content-center">
+				<div class="contededor-texto col-sm-12 col-md-12 col-xl-6 ">
+					<h1 class="miAzul aniview"  data-av-animation="fadeInLeft">Ahorro de tiempo:</h1>
+					<p class="aniview" data-av-animation="fadeInLeft">es muy probable que en este momento maneje varios proveedores para
+					distintos servicios, teniendo que invertir mucho tiempo para hacerles seguimiento (llamadas,correos, sms via ws, etc) a cada uno de ellos.</p>
+					<h4 class="miAzul aniview"  data-av-animation="fadeInLeft"><b class="mt-5">Sensus gracias a sus 05 servicios integrales le permite realizar un seguimiento más rápido, ahorrando tiempo valioso para otras actividades.</b></h4>
+					<br>
+					<h1 class="miAzul aniview"  data-av-animation="fadeInLeft">Ejecucion impecable:</h1>
+					<p class="aniview" data-av-animation="fadeInLeft">Olvídese de los trabajos entregados fuera de los plazos pectados o con calidad inferior a la esperada. Sensus ha implementado un sistema de control de calidad a sus 05 servicios, que permite al cliente ser parte activa en el proceso de producción de sus trabajos, logrando cumplir con los plazos y sobre todo, cumpliendo con la calidad de los mismo.</p>
+				</div>
+				<div class="col-sm-12 col-md-12 col-xl-6 d-flex justify-content-center">
+					<img class="img-fluid aniview"  data-av-animation="fadeInRight" src="resources/img/copa.png" alt="sensus">
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-12"><h1 class="bg-danger text-center p-3 text-white">¡Ellos confian en nosotros!</h1></div>
+	</div>
+	<!--  -->
+	<!-- seccion 2-->
+	<div class="main" id="section3">
+		<h1 class="bg-danger text-center p-3 text-white">¿Te agrado nuestro trabajo?¿Que esperas?¡Hablemos!</h1>
+		<div class="text-center ">
+			<h1 class="display-3 aniview" data-av-animation="fadeInUp">Contactanos y cotiza con nosotros</h1>
+			<p class="me aniview"  data-av-animation="fadeInUp"><b>Nosotros somos la empresa de confianza que tanto estabas esperando</b></p>
+			<p class="container text-muted aniview"  data-av-animation="fadeInUp" style="font-size: 24px;">Amigos de infancia que siempre soñamos con construir una campañia en donde podamos explotar nuestras habilidades y capacidades, Sensus
+			es justo lo que soñamos y por ello le aseguramos todo el compromiso y profesionalismo con cada proyecto que nos puedan confiar.</p>
+			<div class="row d-flex align-items-center justify-content-center mb-4">
+				<div class="col-sm-12 col-md-12 col-xl-6">
+					<img class="img-fluid aniview" src="resources/img/time.png" alt="sensus"  data-av-animation="fadeInLeft">
+				</div>
+				<div class="col-sm-12 col-md-12 col-xl-6">
+					<div class="size  formula border border-primary aniview"  data-av-animation="fadeInRight">
+					<div class=""> <!-- p-3 -->
+						<div class="p-3" id="formulario">
+							<div id="mensaje"></div>
+							<form action="" method="POST" id="miFormulario">
+								<div class="form-group row">
+									<input class="form-control" type="text" placeholder="Nombre" name="nombre" id="itNombre">
+								<div id="mensaje1" class="errores">Nombre</div>
+								</div>
+
+								<div class="form-group row">
+									<input class="form-control" type="text" placeholder="E-Mail" name="email" id="itMail">
+								<div id="mensaje2" class="errores">E-Mail</div>
+								</div>
+
+								<div class="form-group row">
+									<input class="form-control" type="text" placeholder="Compañia, Empresa" id="itAsunto" class="campo">
+								<div id="mensaje3" class="errores">Compañia, Empresa</div>
+								</div>
+
+								<div class="form-group row">
+									<input class="form-control" type="text" placeholder="Número Telefonico" id="itNumero" class="itNumero">
+								<div id="number" class="errores">Igrese un numero valido de Celular</div>
+								</div>
+
+								<div class="form-group row">
+									<textarea class="form-control" name="" id="itArea" cols="30" rows="10" 
+								placeholder="Escribe tu Mensaje"></textarea>
+								<div id="mensaje4" class="errores">Escribe un Mensaje valido!</div>
+								</div>
+								<button id="bEnviar" class="btn btn-outline-primary btn-lg btn-sensus" type="submit" value="Enviar" onclick="validar">Send</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- fin seccion 2 -->
+	<footer>
+		<div class="bg-primary d justify-content-center">
+			<div class="row p-5 aniview" data-av-animation="bounceIn">
+				<di class="col"></di>
+				<div class="col-sm-12 col-md-3 text-white">
+						<div class="social m-1">
+							<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+						</div>
+						<div class="social m-1">
+							<i class="fa fa-instagram fa-2x " aria-hidden="true"></i>
+						</div>
+						<div class="social m-1">
+							<i class="fa fa-behance fa-2x " aria-hidden="true"></i>
+						</div>
+						<div class="social m-1">
+							<i class="fa fa-linkedin fa-2x " aria-hidden="true"></i>
+						</div>
+				</div>
+				<div class="col-sm-12 col-md-6 text-white">
+					<div >
+						<p >El copyright y todo sobre eso de los cookies y cosas</p>
+						<p>referentes a lo legal , terminos entre otros. 2018 - 2019</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+		</script>
+	 <!-- Bootstrap -->
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script>
+		function openSection(color){
+			if (document.querySelectorAll('div.section:not(.active)').length == 5) {
+			document.querySelector(`.${color}`).className += ' active';
+			let sections = document.querySelectorAll('div.section:not(.active)');
+				for (var i = 0; i < sections.length; i++) {
+					sections[i].className += ' not-active';
+				}
+			}else {
+				let sections = document.querySelectorAll('div.section');
+				for (let i = 0; i < sections.length; i++) {
+					sections[i].className = `section ${sections[i].classList[1]}`;
+				}
+			}
+		}
+		// function toggleSection(color) {
+		// 	let currentElement = document.querySelector(`.${color}`);
+		// 	if (currentElement.className.includes('active')) {
+		// 		closeSection(color);
+		// 	} else {
+		// 		openSection(color);
+		// 	}
+		// }
+		// function openSection(color) {
+		// 	document.querySelector(`.${color}`).className += ' active';
+		// 	var sections = document.querySelectorAll('div.section:not(.active)');
+		// 	for (var i = 0; i < sections.length; i++) {
+		// 		sections[i].className += ' not-active';
+		// 	}
+		// }
+		
+		// function closeSection(color) {
+		// 	let sections = document.querySelectorAll('div.section');
+		// 	for (let i = 0; i < sections.length; i++) {
+		// 	sections[i].className = `section ${sections[i].classList[1]}`;
+		// 	}
+		// }
+	</script>
+	  
+</body>
+</html>

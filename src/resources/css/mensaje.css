@@ -1,0 +1,29 @@
+		#cerrar{
+			float: right;
+			font-family: Calibri;
+			font-size: 14pt;
+			text-decoration: none;
+			text-align: right;
+			color: #197D16;
+			font-weight: bold;
+			margin-right: 10px;
+		}
+		#contenedor-correo{
+			margin: 0px;
+			padding: 0px;
+			background: #E14C4C;
+			width: 325px;
+			height: auto;
+			border: 2px solid #97080A;
+			border-radius: 5px;
+		}
+		#correo{
+			float: right;
+			font-family: Calibri;
+			font-size: 14pt;
+			text-decoration: none;
+			text-align: right;
+			color: #97080A;
+			font-weight: bold;
+			margin-right: 10px;
+		}
