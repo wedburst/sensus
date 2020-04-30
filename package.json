@@ -30,7 +30,7 @@
     },
     "dependencies": {
         "bootstrap": "4.3.1",
-        "jquery": "3.4.1",
+        "jquery": "3.5.0",
         "slider-fotorama": "4.7.0",
         "popper.js": "1.15.0",
         "owl.carousel": "2.3.4",
